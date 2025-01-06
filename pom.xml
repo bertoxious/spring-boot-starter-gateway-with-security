@@ -22,11 +22,8 @@
 		<developer/>
 	</developers>
 	<modules>
-		<module>Citizen</module>
-		<module>Cpsc</module>
         <module>Gateway</module>
 		<module>User-module</module>
-		<module>Gateway-Auth</module>
 	</modules>
 	<scm>
 		<connection/>
