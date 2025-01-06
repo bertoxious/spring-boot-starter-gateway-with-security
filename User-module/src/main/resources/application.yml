@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: Admin-portal
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cpsc
+    username: enterprisedb
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: 8084
+  servlet:
+    context-path: /user
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+    org.springframework.security: DEBUG
+
+jpa:
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
+  show-sql: "false"
+  hibernate:
+    ddl-auto: 'create-drop'
+
+email:
+  smtp:
+    username: bugzilla777@gmail.com
+    host: smtp.gmail.com
+    password: vfcacczpbkmazkny
+    port: 587
+  mailType: html
+  charset: iso-8859-1
+  wordwrap: TRUE
+  active: "no-reply@carot.com"
